@@ -6,6 +6,7 @@ var maxSLide=slides.length-1
 nextBtn.addEventListener('click',()=>{
     current++
    if(maxSLide===current) current=0
+   
 
     slides.forEach((slide,index)=>{
         slide.style.transform=`translateX(${(index-current)*100}%)`
